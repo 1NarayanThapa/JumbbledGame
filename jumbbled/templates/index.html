@@ -1,0 +1,40 @@
+<html>
+    <head>
+
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+             <style>
+                 .center{
+                     width:30%;
+                     margin:0 auto;
+                 }
+             </style>
+    </head>
+<div class="center">
+<div class="container">
+<h1 class="text-left
+">Jumbbled Game </h1>
+<br>
+<!-- {{msg}} -->
+<h1 class="text-left">{{jum_word}}</h1>
+<br>
+<!-- <for?/m action="" method="get" -->
+    <form action="{% url 'checks' %}" method="get">
+        <div class="form-group">
+     <!-- <input type="text" placeholder="Answer">  -->
+    <!-- <input type="text" name="answer" placeholder="Answer"> -->
+    <input class="form -control" type="text"  name="answer" placeholder="arrange the word ">
+
+    <!-- <button type="submit">check</button> -->
+    <br>
+    <br>
+    <button class=" center btn btn-primary" type="submit">check</button>
+
+    </div>
+</form>
+<br>
+
+<h2 class="text-center">{{ msg }}</h2>
+</div>
+</div>
+</html>
